@@ -1,4 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
+import '../../App.scss'
+
 interface Propss {
   rgb: [number, number, number];
   weight: number;

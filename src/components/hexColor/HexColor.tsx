@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react'
 import Values from 'values.js'
+import '../../App.scss'
 interface prorp{
     setList:React.Dispatch<React.SetStateAction<Values[]>>
 }
@@ -12,9 +13,11 @@ const HexColor:FC<prorp> = ({setList}) => {
         try {
             let colors = new Values(color).all(10)
             setList(colors)
+            return
           } catch (error) {
             setError(true)
-            console.log(error)
+            console.log(error);
+            return
           }
         }
     return (

@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Values from 'values.js'
 import Color from '../color/Color'
 import HexColor from '../hexColor/HexColor'
+import '../../App.scss'
+
 
 
 const SingleColor= () => {
